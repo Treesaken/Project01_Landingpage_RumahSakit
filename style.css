@@ -1,0 +1,1041 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --maincolor:#019b98;
+    --secondcolor:#dd0025;
+    --thirdcolor:#f4ab01;
+    --textcolor:#014e60;
+}
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    
+    transition:all .2s linear;
+    font-family: Poppins;
+    
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 1000;
+    background-color: white !important;
+
+}
+.sidebar{
+    display: none;
+}
+.logo{
+    width: 150px;
+}
+.logo img{
+    width: 100%;
+}
+.navbar a{
+    color: var(--textcolor);
+    font-size: 16px;
+    margin: 1rem;
+    position: relative;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color: var(--maincolor);
+}
+
+.navbar a::after{
+    content: "";
+    background-color: var(--maincolor);
+    width: 0;
+    position: absolute;
+    height: 0.2rem;
+    left: 0;
+    margin-top: 0.5rem;
+    top: 100%;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+
+#menu-bars{
+    color: var(--textcolor);
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    display: none;
+}
+.login{
+    display: none;
+}
+#menu-bars:hover{
+    color: var(--maincolor);
+}
+.right-icons {
+    display: flex;
+    gap: 4px;
+}
+.right-icons .btn{
+    
+    padding:12px 16px;
+    font-size: 1.5rem;
+    background: var(--maincolor);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn-masuk{
+    padding:12px 16px;
+    font-size: 1.5rem;
+    background: white;
+    color: var(--maincolor);
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid var(--maincolor);
+    border-radius: 4px;
+    font-weight: bold;  
+}
+.right-icons .btn:hover{
+    background-color: var(--secondcolor);
+}
+.btn-masuk:hover{
+    background-color: var(--secondcolor);
+    color: white;
+    border: 1px solid var(--secondcolor);
+}
+
+/* header section ended */
+
+#close{
+    display: none;
+
+}
+
+/* Home section started */
+
+.main-home{
+    padding: 2rem 7%;
+    background-image: url(images/blurbg1.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.home .home-left-content{
+    flex: 1 1 40rem;
+}
+
+.home-left-content span{
+    font-size: 2rem;
+    color: var(--maincolor);
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+.home-left-content h2{
+    font-size: 48px;
+    margin: 1rem 0;
+    
+}
+.home-left-content p{
+    font-size: 1.7rem;
+    color: var(--textcolor);
+    line-height: 3rem;
+}
+
+.home-btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 2rem;
+}
+.home-btn a{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background-color: var(--maincolor);
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s ease;
+    border: 1px solid var(--maincolor);
+}
+.home-btn a:hover{
+    padding: 1.5rem 2.5rem;
+}
+
+
+.homebtnsec{
+    background:transparent !important;
+    color: var(--textcolor) !important;
+    border: 1px solid var(--maincolor);
+}
+.homebtnsec:hover{
+    background-color: var(--secondcolor) !important;
+    color: white !important;
+    border: 1px solid var(--secondcolor);
+}
+
+.home .home-right-content{
+    flex: 1 1 50rem;
+}
+
+.home .home-right-content img{
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.technology{
+    padding: 3rem 7%;
+}
+
+.main-technology{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: -100px;
+}
+.inner-technology{
+    flex: 1 1 300px;
+    padding: 3rem 3rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image: url(images/backgroung-pattern-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.inner-technology span{
+    width: 0;
+    height: 100%;
+    background-color: var(--maincolor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+}
+.inner-technology:hover span{
+    width: 100%;
+}
+
+
+/* .inner-technology:hover{
+    background: var(--maincolor);
+    
+} */
+
+.inner-technology:hover i{
+    
+    color: white;
+}
+.inner-technology:hover h2{
+    color: white;
+}
+.inner-technology:hover p{
+    color: white;
+}
+.inner-technology i{
+    font-size: 48px;
+    color: var(--maincolor);
+}
+
+.inner-technology h2{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.inner-technology p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 1rem 0;
+}
+
+
+
+/* home section will end */
+
+/* About us section  */
+.main-about{
+    padding: 2rem 7%;
+    width: 100%;
+    background-image: url(images/backgroung-pattern-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.main-about .about-heading{
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--maincolor);
+    border-bottom: 2px solid var(--secondcolor);
+    width: 300px;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+}
+.inner-main-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.about-inner-content-left{
+    flex: 1 1 40rem;
+}
+.about-inner-content-left img{
+    width: 90%;
+    padding: 2rem;
+}
+.about-inner-content{
+    flex: 1 1 45rem;
+}
+.about-inner-content img{
+    width: 100%;
+}
+.about-right-content h2{
+    font-size: 30px;
+    padding: 1.5rem 0;
+    color: black;
+    font-weight: bolder;
+    line-height: 4rem;
+}
+.about-right-content p{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    color: var(--textcolor);
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    line-height: 2.5rem;
+}
+.aboutsec-content{
+    line-height: 2.5rem !important;
+}
+.aboutbtn{
+    padding: 1.5rem 3rem;
+    background-color: transparent;
+    border: 1px solid var(--maincolor);
+    margin-top: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.5s all;
+    border-radius: 4px;
+}
+.aboutbtn:hover{
+    background-color: var(--secondcolor);
+    color: white;
+    border:none;
+    padding: 1.5rem 3.5rem;
+}
+.main-doctors{
+    padding: 2rem 7%;
+    background-image: url(images/backgroung-pattern-3.png);
+    background-color: #f5f5f5;
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.doctors-heading{
+    font-size: 30px;
+    text-align: center;
+   margin: 4rem;
+   color: var(--maincolor);
+}
+.main-inner-doctor{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    
+}
+.doc-poster{
+    flex: 1 1 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.section-doctor {
+    position: relative;
+    padding: 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+.swiper-button-next2,
+.swiper-button-prev2 {
+    position: absolute;
+    display: none;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    color: var(--maincolor) !important;
+    opacity: 0.7;
+    z-index: 10; 
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next2 {
+    right: -20px !important; 
+}
+
+.swiper-button-prev2 {
+    left: -20px !important; 
+}
+
+.swiper-button-next2:hover,
+.swiper-button-prev2:hover {
+    opacity: 1; 
+}
+
+/* Style untuk pagination Swiper */
+.swiper-pagination2 {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.swiper-pagination2-bullet {
+    height: 10px;
+    width: 10px;
+    background: var(--maincolor) !important;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-pagination2-bullet-active {
+    opacity: 1;
+    background: var(--maincolor) !important;
+}
+.doc-poster img{
+    width: 100%;
+    border: 2px solid var(--maincolor);
+}
+.doc-poster:hover img{
+    border-radius: 0 50px 0 0;
+}
+.doc-icons{
+    position: absolute;
+    left: -100%;
+    top: 10%;
+    transition: 0.5s;
+}
+.doc-icons i{
+    font-size: 2rem;
+    margin: 0.5rem;
+    border: 1px solid var(--secondcolor);
+    color: var(--maincolor);
+    padding: 1rem;
+    background-color: white;
+    cursor: pointer;
+    
+}
+.doc-icons i:hover{
+    background-color: white;
+    color: var(--secondcolor);
+    border-radius: 10px !important;
+    transform: scale(1.2);
+    border: 1px solid var(--maincolor);
+}
+.doc-poster::after{
+    content: "";
+    background: linear-gradient(0deg, #f5f5f5 50%, transparent);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    bottom: -200px;
+    transition: 0.5s;
+}
+.doc-poster:hover:after{
+    bottom: -100px;
+}
+
+
+
+.doc-details{
+ position: absolute;
+
+ z-index: 2;
+ bottom: -30px;
+ left: 5%;
+
+}
+.doc-details h2{
+    color: black;
+    font-size: 20px;
+    padding:  0;
+}
+
+.doc-details i{
+    font-size: 24px;
+    color: var(--maincolor);
+    cursor: pointer;
+}
+.doc-details i:hover{
+    color: var(--secondcolor);
+    transform: scale(1.2);
+}
+
+.doc-poster:hover .doc-details{
+    bottom: 10px;
+}
+.our-service{
+    width: 100%;
+    padding: 3rem 7%;
+}
+.service-heading h2{
+    font-size: 40px;
+    color: var(--maincolor);
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+.main-services{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    text-align: center;
+}
+.inner-services{
+    flex: 1 1 300px;
+    height: 300px;
+    padding: 3rem 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 2px solid var(--textcolor);
+    
+}
+.inner-services:hover{
+    transform: translateY(-10px);
+    border-bottom: 2px solid var(--maincolor);
+    background-color: #f5f5f5;
+}
+.inner-services:hover .service-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    background-color: var(--maincolor);
+    
+}
+.inner-services:hover .service-icon i{
+    color: white;
+    transform: scale(1.1);
+}
+
+.service-icon{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid var(--maincolor);
+    background-color: #f5f5f5;
+}
+.service-icon i{
+    font-size: 3rem;
+    color: var(--maincolor);
+    padding: 1rem;
+}
+.inner-services h3{
+    font-size: 2rem;
+    color: var(--textcolor);
+    padding-top: 2rem;
+}
+.inner-services p{
+    font-size: 1.5rem;
+    color: var(--textcolor);
+    padding: 1.5rem 0;
+    line-height: 2.5rem;
+    
+}
+/* services ends */
+
+/* Janji Temu */
+
+/* Seksi keseluruhan */
+.appointment-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Background Parallax */
+  .parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/about3.jpg') no-repeat center center/cover;
+    z-index: -1;
+    transform: translateZ(0);
+    will-change: transform;
+    background-attachment: fixed; /* Efek parallax */
+  }
+  
+  /* Kontainer Formulir */
+  .form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Judul dan Deskripsi */
+  .form-container h2 {
+    font-size: 40px;
+    color: var(--maincolor);
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-container p {
+    color: var(--textcolor);
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Formulir */
+  .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0;
+    display: block;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 0.5rem;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: var(--maincolor);
+  }
+  
+  /* Tombol Kirim */
+  .submit-btn {
+    padding: 16px 24px;
+    font-size: 16px;
+    background-color: var(--maincolor);
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--secondcolor);
+  }
+  
+
+/* janji temu */
+
+
+
+.main-review{
+    padding: 2.5rem 7%;
+    width: 100%;
+    
+}
+
+
+.review-heading{
+    text-align: center;
+}
+
+.review-heading h1{
+    font-size: 40px;
+    color: var(--maincolor);
+    padding-bottom: 3rem;
+}
+
+
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.review-text{
+    font-size: 16px;
+    color: var(--textcolor);
+}
+.review-stars{
+    margin: 8px 0;
+}
+.colored-icon{
+    color: yellow;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  background: var(--maincolor);
+  border-radius: 20px 20px 0 0;
+}
+
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+.card-content{
+    height: auto;
+    & h2{
+        font-size: 24px;
+        color: var(--textcolor);
+    }
+    & img{
+        margin-bottom: 8px;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+    
+}
+
+
+.section-review {
+    position: relative;
+    padding: 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    color: var(--maincolor) !important;
+    opacity: 0.7;
+    z-index: 10; 
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next {
+    right: -20px !important; 
+}
+
+.swiper-button-prev {
+    left: -20px !important; 
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1; 
+}
+
+/* Style untuk pagination Swiper */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    background: var(--maincolor) !important;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--maincolor) !important;
+}
+.main-footer{
+    padding: 4rem 7%;
+    background-color: var(--textcolor);
+}
+.footer-inner{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content h1{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.link{
+    margin: 20px;
+    & p{
+        width: 100%;
+        max-width: 900px;
+        font-size: 16px;
+        color: white;
+    }
+    & span{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.medsos{
+    display: flex;
+}
+.medsos a{
+    display: block;
+    color: white;
+    font-size: 16px;
+    padding: 0;
+    margin: 0.5rem;
+}
+.link a:hover{
+    color: var(--maincolor);
+}
+.link i{
+    margin-right: 8px;
+}
+.main-profil{
+    display: flex;
+
+    & img{
+        width: 200px;
+    }
+}
+
+@media (max-width:768px) {
+
+    html{
+        font-size: 55%;
+    }
+
+    .right-icons{
+        display: flex;
+        align-items: center;
+    }
+    .right-icons .btn{
+        display: none;
+        
+    }
+    .btn-masuk{
+        display: none;
+    }
+    #menu-bars{
+        
+        display: initial;
+    }
+
+    header{
+        padding: 2rem;
+        background-color: white;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+    }
+    .navbar.active{
+        left: 0;
+    }
+    .navbar a{
+        display: block;
+        margin: 2rem;
+        padding: 1rem;
+        border: none;
+
+        & .login{
+            display: block;
+        }
+    }
+
+    .inner-technology{
+        height: 250px;
+
+        & i{
+            font-size: 32px;
+        }
+        & h2{
+            font-size: 2rem;
+        }
+    }
+    
+    .main-about .about-heading{
+        font-size: 32px;
+        width: 250px;
+    }
+
+    .doctors-heading h2{
+        font-size: 32px;
+    }
+    
+    .service-heading h2{
+        font-size: 32px;
+    }
+
+    .doc-poster{
+        width: fit-content;
+        & img{
+            width: 100%;
+        }
+    }
+
+
+
+    .inner-services{
+        height: auto;
+
+    }
+    .service-icon{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+
+        & i{font-size: 2rem;}
+    }
+    .inner-services:hover .service-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    .home .home-left-content{
+        margin-top: 50px;
+        padding: 2rem;
+    }
+
+    .home .home-left-content h2{
+        font-size: 30px;
+    }
+    .main-technology{
+        
+        margin-top: 0;
+    }
+
+    .about-right-content h2{
+        font-size: 20px;
+    }
+    
+    .form-container{
+        margin: 32px;
+        
+        & h2{
+            font-size: 32px;
+        }
+        & p{
+            font-size: 14px;
+        }
+    }
+    .form-group{
+
+        & label{
+            font-size: 14px;
+        }
+        & input{
+            font-size: 14px;
+        }
+    }
+    .submit-btn{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none !important;
+    }
+
+    .main-profil img{
+        width: 200px;
+        height: auto;
+    }
+    
+}
+

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital management website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+       <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+<body> 
+
+    <header>
+        
+        <div class="logo"><img src="images/Logo rs.svg" alt=""></div>
+
+        <nav class="navbar">
+            <a href="#beranda">Beranda</a>
+            <a href="#" onclick="location.href = 'login.html'" class="login">Masuk / Daftar</a>
+            <a href="#tentang-kami">Tentang Kami</a>
+            <a href="#dokter">Dokter Kami</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="right-icons">
+            <div id="menu-bars"><i class="bi bi-list" style="font-size: 32px;"></i></div>
+            <div id="close"><i class="bi bi-x" style="font-size: 32px;"></i></div>
+            <div class="btn" onclick="location.href = '#janjitemu'">Buat Janji Temu</div>
+            <div class="btn-masuk" id="masuk-daftar" onclick="location.href = 'login.html';">Masuk / Daftar</div>
+        </div>
+
+
+    </header>
+
+    <!-- header section ended -->
+
+
+    <!-- Home section started -->
+
+        <div class="main-home" id="beranda">
+
+            <div class="home">
+                <div class="home-left-content">
+                    <span>Selamat Datang di RS Harapan Nusantara</span>
+                    <h2>Kesehatan Anda<br> Prioritas Kami</h2>
+                    <p class="lorem">Kami hadir untuk memberikan perawatan penuh kasih dan solusi inovatif demi kesehatan serta kesejahteraan Anda. Rasakan layanan terbaik di setiap langkah perjalanan penyembuhan Anda.</p>
+                
+                    <div class="home-btn">
+                        <a href="#tentang-kami">Baca Selengkapnya</a>
+                        <a class="homebtnsec" href="#janjitemu">Janji Temu</a>
+                    </div>
+                        
+                </div>
+
+                <div class="home-right-content">
+                    <img src="images/hero2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="technology">
+            <div class="main-technology">
+                
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-tr-hands-heart"></i>
+                    <h2>Pelayanan Dengan Hati</h2>
+                    <p>Mengutamakan perawatan berbasis empati dan kepedulian terhadap pasien. Ikon tangan terbuka dengan hati melambangkan pendekatan yang humanis.</p>
+                </div>
+
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-rr-doctor"></i>
+                    <h2>Fasilitas Lengkap & Modern</h2>
+                    <p>Rumah sakit dilengkapi dengan peralatan medis modern, melambangkan profesionalitas yang ditunjukkan oleh ikon medical kit.</p>
+                </div>
+
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-tr-user-md"></i>
+                    <h2>Tenaga Medis Profesional</h2>
+                    <p>Tim dokter dan tenaga medis berpengalaman selalu siap membantu, digambarkan dengan ikon dokter.</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- home section ends -->
+
+    <!-- About us section started -->
+
+        <div class="main-about" id="tentang-kami">
+
+            <div class="about-heading">Tentang Kami</div>
+
+            <div class="inner-main-about">
+                <div class="about-inner-content-left">
+                    <img src="images/about1.png" alt="">
+                </div>
+
+                <div class="about-inner-content">
+                    <div class="about-right-content">
+                        <h2>Menetapkan standar dalam Penelitian <br> dan Perawatan Klinis</h2>
+                        <p>Kami berkomitmen untuk memberikan layanan medis yang komprehensif, memastikan setiap individu memiliki kesempatan untuk menerima perawatan kesehatan berkualitas.</p>
+                        <p class="aboutsec-content">
+                            Rumah sakit kami terus berkembang untuk menyediakan fasilitas kelas dunia dalam berbagai bidang perawatan medis, mulai dari layanan darurat hingga perawatan jangka panjang. Dengan pengalaman lebih dari 30 tahun dan pelatihan terbaik, kami bangga menjadi salah satu penyedia layanan kesehatan terdepan yang dapat diandalkan oleh masyarakat.
+                            </p>
+                            <button class="aboutbtn">Baca Selengkapnya</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- About us section ends -->
+
+    <!-- our doctors -->
+
+        <div class="main-doctors" id="dokter">
+            <div class="doctors-heading">
+                <h2>Dokter Kami</h2>
+            </div>
+
+            <div class="main-doctor">
+                <div class="section-doctor">
+                  <!-- Swiper container -->
+              <div class="swiper mySwiper2 container">
+                <div class="swiper-wrapper content">
+                  
+                  <!-- Swiper slide item 1 -->
+                  <div class="swiper-slide card">
+                      <div class="doc-poster">
+                        <!-- <div class="doc-icons">
+                            <i class="bi bi-share-fill"></i>
+                            <i class="bi bi-eye-fill"></i>
+                            <i class="bi bi-heart"></i>
+                        </div> -->
+                        <img src="images/team1.jpg" alt="">
+          
+                        <div class="doc-details">
+                            <h2>Dr. Maria Anindya</h2>
+                            
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+          
+                      </div>
+                  </div>
+            
+                  <!-- Swiper slide item 2 -->
+                  <div class="swiper-slide card">
+                    <div class="doc-poster">
+                      <!-- <div class="doc-icons">
+                          <i class="bi bi-share-fill"></i>
+                          <i class="bi bi-eye-fill"></i>
+                          <i class="bi bi-heart"></i>
+                      </div> -->
+                      <img src="images/team2.jpg" alt="">
+          
+                      <div class="doc-details">
+                          <h2>Dr. Ahmad Faisal</h2>
+                          
+                          <i class="bi bi-linkedin"></i>
+                          <i class="bi bi-instagram"></i>
+                      </div>
+          
+                    </div>
+                  </div>
+            
+                  <!-- Swiper slide item 3 -->
+                  <div class="swiper-slide card">
+                    <div class="doc-poster">
+                      <!-- <div class="doc-icons">
+                          <i class="bi bi-share-fill"></i>
+                          <i class="bi bi-eye-fill"></i>
+                          <i class="bi bi-heart"></i>
+                      </div> -->
+                      <img src="images/team3.jpg" alt="">
+          
+                      <div class="doc-details">
+                          <h2>Dr. Siti Kamila</h2>
+                          
+                          <i class="bi bi-linkedin"></i>
+                          <i class="bi bi-instagram"></i>
+                      </div>
+          
+                    </div>
+                  </div>
+            
+                  <!-- Swiper slide item 4 -->
+                  <div class="swiper-slide card">
+                    <div class="doc-poster">
+                      <!-- <div class="doc-icons">
+                          <i class="bi bi-share-fill"></i>
+                          <i class="bi bi-eye-fill"></i>
+                          <i class="bi bi-heart"></i>
+                      </div> -->
+                      <img src="images/team4.jpg" alt="">
+          
+                      <div class="doc-details">
+                          <h2>Dr. Clara Nathania</h2>
+                          
+                          <i class="bi bi-linkedin"></i>
+                          <i class="bi bi-instagram"></i>
+                      </div>
+          
+                    </div>
+                  </div>
+            
+                  <!-- Swiper slide item 5 -->
+                  <div class="swiper-slide card">
+                    <div class="doc-poster">
+                      <!-- <div class="doc-icons">
+                          <i class="bi bi-share-fill"></i>
+                          <i class="bi bi-eye-fill"></i>
+                          <i class="bi bi-heart"></i>
+                      </div> -->
+                      <img src="images/team5.jpg" alt="">
+          
+                      <div class="doc-details">
+                          <h2>Dr. Daniel Putra</h2>
+                          
+                          <i class="bi bi-linkedin"></i>
+                          <i class="bi bi-instagram"></i>
+                      </div>
+          
+                    </div>
+                  </div>
+            
+                  <!-- Swiper slide item 6 -->
+                  <div class="swiper-slide card">
+                    <div class="doc-poster">
+                      <!-- <div class="doc-icons">
+                          <i class="bi bi-share-fill"></i>
+                          <i class="bi bi-eye-fill"></i>
+                          <i class="bi bi-heart"></i>
+                      </div> -->
+                      <img src="images/team6.jpg" alt="">
+          
+                      <div class="doc-details">
+                          <h2>Dr. Anisa Rahayu</h2>
+                          
+                          <i class="bi bi-linkedin"></i>
+                          <i class="bi bi-instagram"></i>
+                      </div>
+          
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            
+              <!-- Swiper navigation buttons -->
+              <div class="swiper-button-next2"></div>
+              <div class="swiper-button-prev2"></div>
+              <div class="swiper-pagination2"></div>
+                </div>
+              </div>
+        
+
+        </div>
+
+    <!-- our doctors ended -->
+
+    <!-- our services -->
+
+    <div class="our-service" id="layanan">
+        <div class="service-heading">
+            <h2>Layanan</h2>
+        </div>
+
+        <div class="main-services">
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="bi bi-car-front"></i>
+                </div>
+                <h3>Layanan Darurat 24 Jam</h3>
+                <p>Kami siap melayani Anda kapan saja dengan layanan darurat 24 jam.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="bi bi-thermometer"></i>
+                </div>
+                <h3>Pemeriksaan Kesehatan</h3>
+                <p>Pemeriksaan rutin untuk menjaga kesehatan Anda dengan layanan medis terbaik.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="bi bi-person-lines-fill"></i>
+                </div>
+                <h3>Layanan Konsultasi Dokter</h3>
+                <p>Konsultasi dengan dokter spesialis untuk solusi terbaik atas permasalahan kesehatan Anda.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="bi bi-file-earmark-medical"></i>
+                </div>
+                <h3>Layanan Kesehatan Gigi</h3>
+                <p>Pemeriksaan dan perawatan kesehatan gigi untuk memastikan senyum Anda tetap sehat dan indah.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="bi bi-heart"></i>
+                </div>
+                <h3>Layanan Rehabilitasi</h3>
+                <p>Program rehabilitasi untuk membantu Anda pulih dari cedera atau penyakit.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="bi bi-droplet"></i>
+                </div>
+                <h3>Laboratorium & Tes Kesehatan</h3>
+                <p> Tes laboratorium untuk mendiagnosis kondisi medis dan menjaga kesehatan Anda.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- our services ended -->
+
+    <!-- form Janji Temu -->
+
+    <div class="main-janjitemu" id="janjitemu">
+        <section class="appointment-section">
+            <div class="parallax-bg"></div>
+            <div class="form-container">
+              <h2>Janji Temu</h2>
+              <p>Isi formulir berikut untuk membuat janji temu dengan dokter kami.</p>
+              <form>
+                <div class="form-group">
+                  <label for="name">Nama</label>
+                  <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">No. Telepon</label>
+                  <input type="tel" id="phone" name="phone" placeholder="No. Telepon Anda" required>
+                </div>
+                <div class="form-group">
+                  <label for="date">Tanggal Janji Temu</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                  <label for="doctor">Pilih Dokter</label>
+                  <select id="doctor" name="doctor" required>
+                    <option value="" disabled selected>Pilih Dokter</option>
+                    <option value="dokter1">Dr. Anisa Rahayu</option>
+                    <option value="dokter2">Dr. Muhammad Fadhil</option>
+                    <option value="dokter3">Dr. Siti Nur Aisyah</option>
+                    <option value="dokter4">Dr. Indah Lestari</option>
+                    <option value="dokter5">Dr. Bima Pratama</option>
+                    <option value="dokter6">Dr. Maya Sari</option>
+                  </select>
+                </div>
+                <button type="submit" class="submit-btn">Kirim</button>
+              </form>
+            </div>
+          </section>          
+    </div>
+
+
+    <!-- customer review -->
+   
+        <div class="main-review">
+            <section class="section-review">
+                <!-- Swiper container -->
+                <div class="swiper mySwiper container">
+                  <div class="swiper-wrapper content">
+                    
+                    <!-- Swiper slide item 1 -->
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                          <img src="images/pic1.png" alt="">
+          
+                          <h2>Lara John</h2>
+                          <div class="review-stars">
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-regular fa-star fa-lg "></i>
+                          </div>
+          
+                          <div class="review-text">
+                              <p>Pelayanan yang sangat memuaskan! Saya merasa sangat diperhatikan dan semua kebutuhan medis saya ditangani dengan cepat dan profesional. Terima kasih atas perhatian dan dedikasinya.</p>
+                          </div>
+          
+                      </div>
+                    </div>
+              
+                    <!-- Swiper slide item 2 -->
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                          <img src="images/pic2.png" alt="">
+          
+                          <h2>Andi Pratama</h2>
+                          <div class="review-stars">
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-regular fa-star fa-lg "></i>
+                          </div>
+          
+                          <div class="review-text">
+                              <p>Dokter dan staf di sini sangat ramah dan profesional. Saya merasa nyaman dan yakin dengan pengobatan yang saya terima. Pasti akan kembali lagi!</p>
+                          </div>
+          
+                      </div>
+                    </div>
+              
+                    <!-- Swiper slide item 3 -->
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                          <img src="images/pic2.png" alt="">
+          
+                          <h2>Andi Pratama</h2>
+                          <div class="review-stars">
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-regular fa-star fa-lg "></i>
+                          </div>
+          
+                          <div class="review-text">
+                              <p>Dokter dan staf di sini sangat ramah dan profesional. Saya merasa nyaman dan yakin dengan pengobatan yang saya terima. Pasti akan kembali lagi!</p>
+                          </div>
+          
+                      </div>
+                    </div>
+              
+                    <!-- Swiper slide item 4 -->
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                          <img src="images/pic2.png" alt="">
+          
+                          <h2>Andi Pratama</h2>
+                          <div class="review-stars">
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-regular fa-star fa-lg "></i>
+                          </div>
+          
+                          <div class="review-text">
+                              <p>Dokter dan staf di sini sangat ramah dan profesional. Saya merasa nyaman dan yakin dengan pengobatan yang saya terima. Pasti akan kembali lagi!</p>
+                          </div>
+          
+                      </div>
+                    </div>
+              
+                    <!-- Swiper slide item 5 -->
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                          <img src="images/pic2.png" alt="">
+          
+                          <h2>Andi Pratama</h2>
+                          <div class="review-stars">
+                              <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                              <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                              <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                              <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                              <i class="fa-regular fa-star fa-lg "></i>
+                          </div>
+          
+                          <div class="review-text">
+                              <p>Dokter dan staf di sini sangat ramah dan profesional. Saya merasa nyaman dan yakin dengan pengobatan yang saya terima. Pasti akan kembali lagi!</p>
+                          </div>
+          
+                      </div>
+                    </div>
+              
+                    <!-- Swiper slide item 6 -->
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                          <img src="images/pic2.png" alt="">
+          
+                          <h2>Andi Pratama</h2>
+                          <div class="review-stars">
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-solid fa-star fa-lg colored-icon"></i>
+                            <i class="fa-regular fa-star fa-lg "></i>
+                          </div>
+          
+                          <div class="review-text">
+                              <p>Dokter dan staf di sini sangat ramah dan profesional. Saya merasa nyaman dan yakin dengan pengobatan yang saya terima. Pasti akan kembali lagi!</p>
+                          </div>
+          
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              
+                <!-- Swiper navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </section>
+        </div>
+    
+    <!-- customer review -->
+
+
+    <!-- footer -->
+
+    <div class="main-footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-content">
+                <h1>Profil Pengembang</h1>
+
+                <div class="main-profil">
+                    <img src="images/WhatsApp_Image_2024-07-16_at_08.51.34_647ba6f3-removebg-preview.png " alt="">
+                    <div class="link">
+                        <p><span>Muhamad Bilal Fatiha</span><br>Saya mahasiswa Teknik Informatika di STT Terpadu Nurul Fikri yang bersemangat dalam mengembangkan solusi digital berbasis teknologi. Memiliki minat mendalam pada pengembangan perangkat lunak dan teknologi berkelanjutan.</p>
+                        <div class="medsos">
+                            <a href="https://www.instagram.com/mhmdbilalfath/"><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/muhamad-bilal-fatiha-b40935304/"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/Treesaken"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- footer ended -->
+
+
+    <script src="index.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        grabCursor: true,
+        loop: true,
+
+        // Pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Next and previous navigation
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+          0: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 3
+          }
+        }
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 30,
+        grabCursor: true,
+        loop: true,
+
+        // Pagination
+        pagination: {
+          el: ".swiper-pagination2",
+          clickable: true,
+        },
+
+        // Next and previous navigation
+        navigation: {
+          nextEl: ".swiper-button-next2",
+          prevEl: ".swiper-button-prev2",
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+          0: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 3
+          }
+        }
+      });
+    </script>
+
+</body>
+</html>
